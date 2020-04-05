@@ -33,7 +33,7 @@ public class SfgDiApplication {
 		System.out.println(constructorInjectedController.getGreeting());
 		
 		System.out.println("-------- Profile" );
-		//Profile is set in application.properties
+		//Profile is set in application.properties or - in case we have a default profile - in the respective ServiceImpl
 		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
 		System.out.println(i18nController.sayHello());
 	}
